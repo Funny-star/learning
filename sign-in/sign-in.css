@@ -14,14 +14,60 @@ a{
     width: 435px;
     height: 660px;
     margin: 200px auto;
+    overflow: hidden;
 }
 
 .header{
     width: 100%;
     height: 60px;
-    background-color: rgb(245, 245, 245);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+}
+
+.qr-box-out{
+    width: 59px;
+    height: 59px;
+    overflow: hidden;
+}
+
+.qr-box{
+    float: left;
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-right: 60px solid white;
+    z-index: 2;
+    position: relative; 
+    filter: drop-shadow(-4px -4px 10px rgba(197, 197, 197, 0.3));
+}
+
+
+.qr{
+    width: 40px;
+    height: 40px;
+    float: left;
+    position: relative;
+    left: 10px;
+    top: -50px;
+    z-index: 1;
+}
+
+.esc{
+    width: 25px;
+    height: 25px;
+    float: right;
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    color: rgb(150, 150, 150);
+    cursor: pointer;
+    position: relative;
+    top: -60px;
+}
+
+.esc:hover{
+    background-color: rgb(255, 45, 45);
+    color: white;
 }
 
 .logo{
@@ -189,9 +235,6 @@ a{
     width: 100%;
     height: 100px;
     text-align: center;
-}
-
-.button-part{
     height: 50px;
     margin-top: 90px;
 }
@@ -207,6 +250,14 @@ a{
     cursor: pointer;
 } 
 
+#sign-in-button:hover{
+    color: rgb(255, 69, 0);
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(128, 45, 45);
+    position: relative;
+    top: -2px;
+}
+
 .sign-up{
     width: 100%;
     height: 50px;
@@ -215,9 +266,13 @@ a{
 }
 
 #sign-up-button{
-    
     font-size: 20px;
 }
+
+#sign-up-button:hover{
+    color: rgb(255, 45, 45);
+    cursor: pointer;
+}   
 
 .other-sign-in{
     width: 100%;
@@ -243,6 +298,12 @@ a{
     margin-top: 80px;
 }
 
+.other-sign-in img:hover{
+    position: relative;
+    top: -3px;
+    cursor: pointer;
+}
+
 #footer{
     width: 100%;
     height: 60px;
@@ -258,6 +319,12 @@ a{
     outline: none;
     margin-top: 10px;
     margin-right: 10px;
+}
+
+#footer input:hover{
+    position:relative;
+    top: -1px;
+    cursor: pointer;
 }
 
 #footer p{
